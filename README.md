@@ -5,7 +5,7 @@
 
 #### 1. install in the target (wip)
 ```sh
-/bin/zsh -e "$(curl -fsSL https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js)"
+/bin/zsh -e "$(curl -fsSL https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/install)"
 ```
 
 #### 2. start ping server and wait for target to ping back
