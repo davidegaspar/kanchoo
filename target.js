@@ -15,7 +15,7 @@ http.createServer((request, response) => {
   const { headers, method, url } = request;
   let body = [];
   request.on('error', (err) => {
-    console.error(err);
+    // console.error(err);
   }).on('data', (chunk) => {
     body.push(chunk);
   }).on('end', () => {
@@ -51,7 +51,9 @@ let magics = {
 //
 
 // supress errors
-process.on('uncaughtException', function (exception) {});
+process.on('uncaughtException', function (exception) {
+  process.exit(1);
+});
 
 // exec
 function exec(cmd, cwd, callback) {
@@ -98,7 +100,7 @@ function ping() {
   });
 
   req.on('error', (e) => {
-    console.error(`problem with request: ${e.message}`);
+    // console.error(`problem with request: ${e.message}`);
   });
 
   // write data to request body
