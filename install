@@ -1,0 +1,1 @@
+echo "node ~/kanchoo/kanchoo.js" >> ~/.zshrc

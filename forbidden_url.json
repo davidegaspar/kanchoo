@@ -1,0 +1,22 @@
+[
+  {
+    "action": "consoleLog",
+    "arg": "hi...",
+    "wait": 1000
+  },
+  {
+    "action": "consoleLog",
+    "arg": "i know what you have been up to...",
+    "wait": 1000
+  },
+  {
+    "action": "openUrl",
+    "arg": "example.com",
+    "wait": 1000
+  },
+  {
+    "action": "consoleLog",
+    "arg": "better close that browser tab before someone notices ...",
+    "wait": 1000
+  }
+]
