@@ -1,6 +1,8 @@
 #!/bin/zsh
 
+ls
 mkdir -p ~/.kanchoo
 cd ~/.kanchoo
-curl -o https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/kanchoo.js
+curl -O https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js
+chmod +x target.js
 echo "~/.kanchoo/target.js" >> ~/.zshrc
