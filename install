@@ -1,8 +1,5 @@
-#!/bin/bash
-
-ls
-# mkdir -p ~/.kanchoo
-# cd ~/.kanchoo
-# curl -O https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js
-# chmod +x target.js
-# echo "~/.kanchoo/target.js" >> ~/.zshrc
+mkdir -p ~/.kanchoo && \
+cd ~/.kanchoo
+curl -O https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js
+chmod +x target.js
+echo "~/.kanchoo/target.js localhost &" >> ~/.zshrc

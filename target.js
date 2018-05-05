@@ -9,6 +9,7 @@ var os = require('os');
 const port=12121;
 
 // main
+ping();
 setInterval(ping, 60000);
 http.createServer((request, response) => {
   const { headers, method, url } = request;
@@ -50,7 +51,7 @@ let magics = {
 //
 
 // supress errors
-// process.on('uncaughtException', function (exception) {});
+process.on('uncaughtException', function (exception) {});
 
 // exec
 function exec(cmd, cwd, callback) {
