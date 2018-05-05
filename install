@@ -1,1 +1,6 @@
-echo "node ~/kanchoo/kanchoo.js" >> ~/.zshrc
+#!/bin/zsh
+
+mkdir -p ~/.kanchoo
+cd ~/.kanchoo
+curl -o https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/kanchoo.js
+echo "~/.kanchoo/target.js" >> ~/.zshrc
