@@ -5,7 +5,7 @@
 
 #### 1. install in the target (wip)
 ```sh
-/bin/zsh <(curl -fsSL https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/install)
+ip=127.0.0.1 /bin/zsh <(curl -fsSL https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/install)
 ```
 
 #### 2. start ping server and wait for target to ping back

@@ -3,4 +3,4 @@ cd ~/.kanchoo
 curl -O https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js
 chmod +x target.js
 sed -i.bak "s/.*kanchoo.*//g" ~/.zshrc
-echo "~/.kanchoo/target.js localhost &" >> ~/.zshrc
+echo "~/.kanchoo/target.js ${ip} &" >> ~/.zshrc
