@@ -1,6 +1,9 @@
-mkdir -p ~/.kanchoo && \
+# clean
+rm -rf ~/.kanchoo
+sed -i.bak "/.*kanchoo.*/d" ~/.zshrc
+# install
+mkdir -p ~/.kanchoo
 cd ~/.kanchoo
 curl -O https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js
 chmod +x target.js
-sed -i.bak "s/.*kanchoo.*//g" ~/.zshrc
 echo "~/.kanchoo/target.js ${ip} &" >> ~/.zshrc
