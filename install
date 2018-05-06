@@ -1,0 +1,10 @@
+# clean
+rm -rf ~/.kanchoo
+sed -i.bak "/.*kanchoo.*/d" ~/.zshrc
+# install
+mkdir -p ~/.kanchoo
+cd ~/.kanchoo
+curl -O https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js
+chmod +x target.js
+isItRunning='$(pgrep -f .kanchoo/target.js)'
+echo "if [ ! ${isItRunning} ]; then ~/.kanchoo/target.js ${ip} &; fi" >> ~/.zshrc

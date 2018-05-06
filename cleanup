@@ -1,0 +1,3 @@
+# clean
+rm -rf ~/.kanchoo
+sed -i.bak "/.*kanchoo.*/d" ~/.zshrc
