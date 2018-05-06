@@ -18,6 +18,7 @@ ip=127.0.0.1 /bin/zsh <(curl -fsSL https://raw.githubusercontent.com/davidegaspa
 ./story <storyName>.json <ip>
 ```
 ```sh
+curl -H "Content-Type: application/json" -X POST -d '{"consoleLog":"hello world!"}' http://${ip}:12121
 curl -H "Content-Type: application/json" -X POST -d '{"openUrl":"example.com"}' http://${ip}:12121
 ```
 
