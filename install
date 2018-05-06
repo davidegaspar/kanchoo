@@ -6,4 +6,5 @@ mkdir -p ~/.kanchoo
 cd ~/.kanchoo
 curl -O https://raw.githubusercontent.com/davidegaspar/kanchoo/wip/target.js
 chmod +x target.js
-echo "if [ ! $(pgrep -f .kanchoo/target.js) ]; then ~/.kanchoo/target.js ${ip} &; fi" >> ~/.zshrc
+isItRunning='$(pgrep -f .kanchoo/target.js)'
+echo "if [ ! ${isItRunning} ]; then ~/.kanchoo/target.js ${ip} &; fi" >> ~/.zshrc
